@@ -1,5 +1,5 @@
 {
-    "name": "r3sist/php-tmdb-symfony",
+    "name": "resist/php-tmdb-symfony",
     "license": "MIT",
     "type": "symfony-bundle",
     "description": "Symfony Bundle for TMDB (The Movie Database) API. Provides easy access to the php-tmdb/api library.",
