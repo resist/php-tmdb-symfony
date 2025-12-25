@@ -87,7 +87,7 @@ class Configuration implements ConfigurationInterface
                             ->addDefaultsIfNotSet()
                             ->children()
                                 ->scalarNode('adapter')
-                                ->isRequired()->cannotBeEmpty()
+                                ->cannotBeEmpty()
                                 ->defaultValue(EventDispatcherInterface::class)
                             ->end()
                             ->end()
