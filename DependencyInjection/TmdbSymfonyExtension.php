@@ -48,8 +48,8 @@ class TmdbSymfonyExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
-        $loader->load('services.xml');
+        $loader = new Loader\PhpFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
+        $loader->load('services.php');
 
         $container->setParameter('tmdb.api_token', $config['options']['api_token']);
         $container->setParameter('tmdb.bearer_token', $config['options']['bearer_token']);
@@ -59,7 +59,7 @@ class TmdbSymfonyExtension extends Extension
         }
 
         if ($config['repositories']['enabled']) {
-            $loader->load('repositories.xml');
+            $loader->load('repositories.php');
 
             if (!$config['disable_legacy_aliases']) {
                 $this->handleLegacyRepositoryAliases($container);
@@ -67,7 +67,7 @@ class TmdbSymfonyExtension extends Extension
         }
 
         if ($config['twig_extension']['enabled']) {
-            $loader->load('twig.xml');
+            $loader->load('twig.php');
 
             if (!$config['disable_legacy_aliases']) {
                 $this->handleLegacyTwigExtensionAlias($container);

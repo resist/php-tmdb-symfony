@@ -308,7 +308,7 @@ class MovieParser
 }
 ```
 
-An overview of all the repositories can be found in the services configuration [repositories.xml](https://github.com/php-tmdb/symfony/blob/master/Resources/config/repositories.xml).
+An overview of all the repositories can be found in the services configuration [repositories.php](https://github.com/php-tmdb/symfony/blob/master/Resources/config/repositories.php).
 
 There is also a Twig helper that makes use of the `Tmdb\Helper\ImageHelper` to output urls and html.
 
