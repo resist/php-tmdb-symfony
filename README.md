@@ -1,3 +1,7 @@
+This is a temporary fork of [php-tmdb/symfony](https://github.com/php-tmdb/symfony) to allow the legacy [sorfi.org](https://sorfi.org) to run in a modern environment (Symfony ^8.0, PHP ^8.4). Original README below.
+
+---
+
 # A Symfony Bundle for use together with the [php-tmdb/api](https://github.com/php-tmdb/api) TMDB API Wrapper.
 
 [![License](https://poser.pugx.org/php-tmdb/symfony/license.png)](https://packagist.org/packages/php-tmdb/symfony)
